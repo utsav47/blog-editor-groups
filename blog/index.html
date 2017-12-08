@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+    body
+    {
+    	margin: 0;
+    	background-color: #bce8da;
+
+    }
+	div
+	{
+		
+		background-color: #d4f1e9;
+
+
+	
+
+	}
+	#blog_title, #blog_area, #blog_details,#comment_area
+	{
+		width: 60%;
+		margin-top: 0.5em;
+		border:1px solid #49b5a6;
+
+
+		
+	}
+	#heading
+	{
+		
+		height: 7em;
+		background-color: #25846e;
+		
+		
+		
+	}
+
+	#menu_bar
+	{
+		
+		
+		height: 3em;
+		background-color: #25846e;
+
+		
+
+	}
+
+	#blog_title
+	{
+		
+		
+		
+		text-align: center;
+		font-size: 2em;
+	}
+
+	#blog_area
+	{
+		
+		font-size: 1.8em;		
+	}
+
+	#counter
+	{
+		width: 30%;
+		float: right;
+		margin-top: 2em;
+		border:1px solid #49b5a6;
+		
+	}
+    textarea
+    {
+    
+   display: block;
+   background-color:#bce8da; 
+    	
+    }
+
+    #button
+    {
+      margin-top: 0.5em;
+      background-color: #25846e;
+    }
+    #blog_wrap
+    {
+    	margin: 0.5em;
+    	border: none;
+    	background-color: #bce8da;
+    	margin-left: 1em;
+    	margin-top: 2em;
+    }
+   #blog_area p
+    {
+    	padding: 0.5em;
+    }
+    #blog_title p
+    {
+    	font-size: 2em;
+    	margin: 0;
+    }
+    #heading p
+    {
+    	font-size: 4em;
+    	margin: 0;
+    	color: white;
+    }
+
+
+</style>
+</head>
+<body>
+<div id="heading"><p>The ferternity of genises</p></div>
+
+<div id="menu_bar">Menubar</div>
+<div id="counter">
+
+	
+	<p>1201 views</p>
+	<p>101 likes</p>
+	
+</div>
+
+	<div id="blog_wrap">
+		
+<div id="blog_title"><p>Introducing HTML5</p></div>
+
+<div id="blog_area"><p>A question that’s usually asked when JavaScript is proposed to solve a deficiency in the browser is: “What’s the performance?” Of course, any additional JavaScript that runs in the browser (even if it’s just a one-liner that tests for the presence of a particular feature) will have a performance impact. However, when it comes to real-world use, a very large proportion of feature detection tests are going to be micro-snippets of code that won’t have any effect on your application at all. Runtime will be in the milliseconds, which we’d say is negligible in most situations. What you should also remember is that JavaScript engines are really fast. As the newer and faster browsers are less likely to need polyfills, extensive patches, or helper scripts—and instead require only that you run a few tests—there will be little or no cost for users with modern browsers. Even for older browsers, which have slower JavaScript engines, there will still be no significant cost in the feature detection, but there may be some wait time to load the polyfill. This may be unavoidable, as we’re trying to drag these old browsers into today’s world, albeit kicking and screaming. What’s particularly important is that you don’t polyfill everything including the kitchen sink (sorry, I couldn’t resist the poor man’s DIY joke). When you’re including JavaScript to do what the browser can’t do natively, it will always cost a little bit of performance. If you include a lot of redundant functionality that you won’t make use of, then it’s obviously a waste. Try to include only what you absolutely need. If you’re building the next Super Bruce & Super Remy adventure game using canvas, and find that polyfilling slows IE6 down to a grinding halt and your main audience is IE6 users: don’t use it! As the developer you need to make the judgment call as to whether the selected technology is the right tool for the job.
+	As we’ve already alluded to, there are definitely nuances in writing a polyfill for one technology to the next. However, there are also the black holes, those undetectable technologies. A simple example of an “undetectable” is a technology that gives a false positive when tested. Let’s take, for example, the contenteditable attribute from Chapter 2. If you test for the attribute using the methods we’ve seen so far, it will tell you that contenteditable is supported, but really the problem is that on a device like Safari Mobile (pre-iOS 5) the keyboard doesn’t actually focus to the editable area, so in reality it’s not supported, regardless of the feature detection test. It’s hard to say exactly what is and isn’t available to feature test. So long as you’re testing your polyfill against all the browsers your site plans to support, you’ll find whether or not the feature can be truly and reliably detected. If you’d like a head start on those undetectables and determining the environments in which they’re undetectable, the Modernizr project  has a page dedicated to those technologies. If a feature can’t be detected, what’s the solution? Well, it’s nasty, but one answer could be to browser sniff. It’s an unreliable technique because the browser doesn’t always tell the truth about its version or even its name—even today Microsoft Internet Explorer claims to be a Mozilla browser! What you should also be wary of with user agent sniffing is that there are future browser versions that your code might pick up incorrectly. It’s a very wobbly ground on which to rely.
+
+</p></div>
+
+<div id="blog_details"><p>Author:<span>Jhon Adams</span></p><br>
+<p>Date:<span>11/23/2018</span></p></div>
+
+<div id="comment_area">
+	
+<textarea></textarea>
+	<input id="button" type="submit" name="submit">
+</div>
+
+	</div>
+
+<div id="footer">Footer</div>
+</body>
+</html>
